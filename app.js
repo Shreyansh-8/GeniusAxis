@@ -30,7 +30,8 @@ main().catch(err => console.log(err));
 
 async function main() {
     // await mongoose.connect('mongodb://localhost:27017/loginData');
-    await mongoose.connect('mongodb+srv://pandeyshreyansh50:mUbFMV6dmKVOQPUC@mymongodb.qnmn0k9.mongodb.net/');
+    await mongoose.connect('mongodb+srv://pandeyshreyansh50:mUbFMV6dmKVOQPUC@mymongodb.qnmn0k9.mongodb.net/?retryWrites=true&w=majority');
+    
     
     // data = await complaintData.complaint.find();
     //    const data = await Complaint.find()
