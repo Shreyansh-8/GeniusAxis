@@ -21,7 +21,7 @@ const { verify } = require('crypto');
 
 
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 // const box = alrt;
 app.use(bodyparser.urlencoded());
 
